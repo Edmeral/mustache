@@ -22,13 +22,23 @@ const canvas = document.querySelector('canvas')
 canvas.width = width
 canvas.height = height
 const ctx = canvas.getContext('2d')
-const snapshot = () => {
+const snapshot = (event) => {
+  console.log(event.clientX, event.clientY)
   if (window.localMediaStream) {
     ctx.drawImage(video, 0, 0)
+    // draw the vector image using ctx
+    let x = event.clientX - video.offsetTop
+    let y = event.clientY - video.offsetLeft + window.pageYOffset
+    // ctx.strokeRect(x - 25, y - 25, 50, 50)
+
+    let mustacheSVG = document.querySelector('#mustache')
+    
+    ctx.drawImage(mustacheSVG, x - mustacheSVG.width / 2, y - mustacheSVG.width / 2)
+
     let src = canvas.toDataURL('image/png')
     document.querySelector('img').src = src
-    // window.location.href = src // downloading
+    window.location.href = src // downloading
   }
 }
 
-document.querySelector('button').addEventListener('click', snapshot)
+document.querySelector('video').addEventListener('click', snapshot)

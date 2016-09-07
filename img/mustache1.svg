@@ -1,23 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Testing webRTC</title>
-  <style>
-    video {
-     /* -webkit-filter: blur(4px) invert(1) opacity(0.2);*/
-     /*filter: sepia(1);*/
-    }
-  </style>
-</head>
-<body>
-  <video autoplay></video> <br>
-  <canvas style="display:none;"></canvas>
-  <img src="" alt="">
-  <button>Snap!</button>
-  
-<!--   <svg id='mustache' version="1.0" xmlns="http://www.w3.org/2000/svg"
- width="286pt" height="95pt" viewBox="0 0 2006.000000 665.000000"
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+ "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+  width="143pt" height="47.5pt" viewBox="0 0 2006.000000 665.000000"
  preserveAspectRatio="xMidYMid meet">
 <metadata>
 Created by potrace 1.11, written by Peter Selinger 2001-2013
@@ -42,12 +27,4 @@ c179 -149 580 -435 816 -582 1688 -1051 3732 -1434 5625 -1053 1041 210 1862
 -611 -405 l-87 -82 -93 88 c-364 349 -848 552 -1530 645 -174 23 -678 35 -827
 18z"/>
 </g>
-</svg> -->
-
-<img id='mustache' src="img/mustache.svg" alt="">
-
-  <script src="/lib/adapter.js"></script>
-  <script src="svg.js"></script>
-  <script src="script.js"></script>
-</body>
-</html>
+</svg>
