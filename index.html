@@ -3,11 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <title>Testing webRTC</title>
+  <style>
+    video {
+     /* -webkit-filter: blur(4px) invert(1) opacity(0.2);*/
+     /*filter: sepia(1);*/
+    }
+  </style>
 </head>
 <body>
-  <video autoplay></video>
-  
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/adapterjs/0.13.3/adapter.min.js"></script>
+  <video autoplay></video> <br>
+  <canvas style="display:none;"></canvas>
+  <img src="" alt="">
+  <button>Snap!</button>
+
+  <script src="/lib/adapter.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
